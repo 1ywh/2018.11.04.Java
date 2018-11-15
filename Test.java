@@ -5,9 +5,12 @@ public class Test{
 	System.out.println(outer.name());//liu 
 	System.out.println(new B().getName());//liu
 	
-	//非静态内部类在其他地方使用的时候创建对象的方式
-	Outer.InnerA innerA =new Outer().new InnerA();
+	//非静态和静态内部类在其他地方使用的时候创建对象的方式 
+    //外部类.内部类
+	//创建了一个外部类的引用
+	Outer.InnerA innerA =outer.new InnerA();
 	System.out.println(innerA .name());//liu
+	outer.display(18);
     }
 }
 //普通类A
@@ -25,10 +28,12 @@ class B extends A{
     }
 	public String getName(){
 		return super.getName();		
-	} 	
-//类Outer
+	} 
+}	
+//外部类Outer
 class Outer{
-    //内部类InnerA并且继承了A	
+	private int num=20;
+    //成员内部类InnerA，非静态内部类并且继承了A	
 	class InnerA extends A{
 		public String name(){
 		return super.getName();//父类	
@@ -39,13 +44,24 @@ class Outer{
 		return super.getAge();
 	    }	
 	}
-    //成员函数	
+	//外部类访问内部类的方法或者属性必须创建内部类实例化的对象
 	public int age(){
 		return new InnerB().age();		
 	}
 	public String name(){
 		return new InnerA().name();	
-	} 	
+	} 
+    //方法内部类
+	public void display(int test){	
+		class Inner{
+			public void fun(){
+			num++;
+			System.out.println(num);			
+		}	
+	  }
+	   new Inner().fun();
+	}
+    
 }
 	
 	
