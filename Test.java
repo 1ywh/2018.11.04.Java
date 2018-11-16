@@ -1,3 +1,4 @@
+//成员内部类,非静态内部类
 public class Test{
      public static void main(String[] args){
 	Outer outer=new Outer();
@@ -10,7 +11,7 @@ public class Test{
 	//创建了一个外部类的引用
 	Outer.InnerA innerA =outer.new InnerA();
 	System.out.println(innerA .name());//liu
-	outer.display(18);
+	outer.display();
     }
 }
 //普通类A
@@ -33,7 +34,8 @@ class B extends A{
 //外部类Outer
 class Outer{
 	private int num=20;
-    //成员内部类InnerA，非静态内部类并且继承了A	
+    
+	//成员内部类InnerA，非静态内部类并且继承了A	
 	class InnerA extends A{
 		public String name(){
 		return super.getName();//父类	
@@ -52,7 +54,7 @@ class Outer{
 		return new InnerA().name();	
 	} 
     //方法内部类
-	public void display(int test){	
+	public void display(){	
 		class Inner{
 			public void fun(){
 			num++;
@@ -61,7 +63,7 @@ class Outer{
 	  }
 	   new Inner().fun();
 	}
-    
+     
 }
 	
 	
