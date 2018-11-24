@@ -32,8 +32,9 @@ public void play(){
    } 
  }
 	public static void main(String[] args){
-	    //Finder fi=new Finder();
+	
 		new FindWord().play();	 
+		 
 	}
 }
  
