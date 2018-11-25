@@ -1,3 +1,4 @@
+//程序简单属性、构造方法、普通方法、定义对象来实现结果
 public class Fruit{
 	
 	//属性
@@ -21,7 +22,7 @@ public class Fruit{
 	//普通方法
 	 String fruitinof(){
 		
-		return "大小:"+size+"价格："+prize+"颜色："+color;
+		return "大小: "+size+" 价格："+prize+" 颜色："+color;
 		
 	}	
 	void face(){
