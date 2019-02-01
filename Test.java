@@ -18,7 +18,7 @@ public class Test{
 class A{
 	private String name="liu";
 	public String getName(){
-		return this.name;		
+		return thi s.name;		
 	} 	
 }
 //B继承A
