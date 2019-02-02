@@ -20,7 +20,7 @@ abstract class Drink{
 	//final，public
 	public final void makeDrink(){
 		this.boilWater();
-		
+ 		
 		this.waterInputCup();
 		
 		if(this.isAddMajor())
