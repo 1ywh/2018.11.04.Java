@@ -7,6 +7,7 @@ public class FindWord{
 public FindWord(){
 	
 	Random random=new Random();
+	//返回(0,100)
     this.value =random.nextInt(100); 
 	
 }
@@ -16,7 +17,7 @@ public void play(){
 	Scanner scanner=new Scanner(System.in);
     while(true){
 	    System.out.println("请输入数字：");
-	    int type=scanner.nextInt();	   
+	    int type=scanner. nextInt();	   
     
 	//判断你输入的数字大小
 	if(type>this.value){
@@ -33,7 +34,7 @@ public void play(){
  }
 	public static void main(String[] args){
 	
-		new FindWord().play();	 
+		new FindWord ().play();	 
 		 
 	}
 }
