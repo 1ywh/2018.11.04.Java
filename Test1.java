@@ -1,4 +1,4 @@
-class Person{
+﻿class Person{
 	 public void print(){
         System.out.println("[PRINT]方法："+this);
     }
