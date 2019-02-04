@@ -17,7 +17,7 @@ public class Fruit{
 	}
 	public Fruit(int size,int prize,String color){
       this(size,prize);
-	  this.color=color;
+          this.color=color;
 	}
 			
 	//普通方法
