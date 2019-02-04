@@ -1,4 +1,4 @@
-import java.util.Random;
+﻿import java.util.Random;
 import java.util.Scanner; 
 public class FindWord{
 	
@@ -37,7 +37,7 @@ public void play(){
 		new FindWord ().play();	 
 		 
 	}
-}
+  }
  
 
 	
