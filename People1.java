@@ -3,7 +3,7 @@ class Person{
         System.out.println("[PRINT]方法："+this);
     }
 }
-public class People{
+public class People1{
      public static void main(String[] args) {
      Person p1 = new Person();
      System.out.println("[MAIN]方法："+p1);
