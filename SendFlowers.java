@@ -1,3 +1,4 @@
+//代理模式练习
 public class SendFlowers{
     
 	public  static void main(String[] args){

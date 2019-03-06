@@ -1,4 +1,4 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 interface A{
 	void print();
 }
@@ -27,7 +27,6 @@ class  Factory{
 	}
 	
 }
-
 public class Client{
 	//看调用的是哪个类
       public void buy(A a){

@@ -1,10 +1,9 @@
-public class Fruit1{	
+﻿public class Fruit1{	
 	
 	public static void main(String[] args){
 		Fruit1 fruit=new Fruit1(2,34,"huang");
 		System.out.println(fruit);
-		Fruit1.face();
-		   
+		Fruit1.face();		   
     }
 	//类属性---静态属性
 	//此时变为共享

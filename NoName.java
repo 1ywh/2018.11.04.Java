@@ -14,6 +14,7 @@ interface MyInterface{
 class Outer{
 	
 	private int num=9;
+	
 	//final int value 调用以后不再修改
 	
 	public void display(int value){

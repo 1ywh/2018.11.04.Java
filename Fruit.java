@@ -1,7 +1,6 @@
 ﻿//程序简单属性、构造方法、普通方法、定义对象来实现结果
 public class Fruit{
 	
-
 	//属性
     private String color;
     private int size;

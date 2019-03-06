@@ -15,7 +15,7 @@ public class Made{
 	  }
 
 }
-//一个抽象类
+//一个抽象类，final不希望子类覆写
 abstract class Drink{
 	//final，public
 	public final void makeDrink(){
@@ -42,7 +42,7 @@ abstract class Drink{
 	
 	public abstract void addMinor();	
 	
-	//改变流程的方法，不用写抽象，默认是true，子类可以覆写
+	//钩子方法，改变流程的方法，不用写抽象，默认是true，子类可以覆写
 	public boolean isAddMajor(){
 
        return true;
@@ -50,10 +50,8 @@ abstract class Drink{
 	 }
 	 public void clean(){
 		 
-		 
-	 }
+		 }
 }
-//
 class Coffee extends Drink{
 	
 	private boolean Major=true;
