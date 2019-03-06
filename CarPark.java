@@ -44,7 +44,7 @@ interface Car{
 class Bus implements Car{
 	 
 	public int Length(){
-		return 30;
+		returnp 30;
 		
 	}
 	public int Width(){
